@@ -1,0 +1,60 @@
+# This proposal repository is an explicit, reviewed selection of files.
+# Ignore local secrets and generated material if someone works beside it.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+secrets/
+credentials/
+
+# AI development-agent instructions and task notes are private.
+AGENTS.md
+AGENTS.override.md
+CLAUDE.md
+GEMINI.md
+SKILL.md
+.agents/
+.codex/
+.claude/
+.cursor/
+.cursorrules
+.github/copilot-instructions.md
+.github/instructions/
+TASKS.md
+
+# Local development state
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local data, artifacts, and model files
+data/
+datasets/
+training/
+artifacts/
+static/
+assets/
+*.sqlite
+*.sqlite3
+*.db
+*.log
+*.safetensors
+*.gguf
+*.ckpt
+*.onnx
+*.pt
+*.pth
